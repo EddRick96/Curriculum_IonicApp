@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 5
+      Referencias
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,32 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 5</ion-title>
+      <ion-title size="large">Referencias</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 5 page"></app-explore-container>
+  <!-- The reorder gesture is disabled by default, enable it to drag and drop items -->
+<ion-reorder-group disabled="false">
+
+  <!-- Custom reorder icon end items -->
+  <ion-item>
+    <ion-label>
+      Ing. Gonzalo Salvador
+    </ion-label>
+    <ion-reorder slot="end">
+      <ion-icon name="pizza"></ion-icon>
+    </ion-reorder>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+      Ing. Luis Ponce
+    </ion-label>
+    <ion-reorder slot="end">
+      <ion-icon name="pizza"></ion-icon>
+    </ion-reorder>
+  </ion-item>
+
+</ion-reorder-group>
+  
 </ion-content>
